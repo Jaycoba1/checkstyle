@@ -7,6 +7,13 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 /**
  * This check is designed to identify overriden methods that only call parents's implementation
  * with no additional logic
+ * e.g.
+ * public class B extends A {
+ *      @Override
+ *      public void foo(int bar) {
+ *          super.foo(int bar)
+ *      }
+ * }
  */
 public class UselessOverrideCheck extends AbstractCheck {
     String MSG_KEY = "useless.method.override";
@@ -37,6 +44,7 @@ public class UselessOverrideCheck extends AbstractCheck {
         }
 
 
+        //todo: double check failure cases and double check for super call and check return
         String methodName = ast.findFirstToken(TokenTypes.IDENT).getText();
         String methodCalled = astSList.findFirstToken(TokenTypes.EXPR).findFirstToken(TokenTypes.METHOD_CALL)
                 .findFirstToken(TokenTypes.DOT).findFirstToken(TokenTypes.IDENT).getText();
