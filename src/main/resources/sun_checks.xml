@@ -201,6 +201,8 @@
       <property name="optional" value="true"/>
     </module>
 
+    <module name="com.puppycrawl.tools.checkstyle.checks.UselessOverrideCheck"/>
+
   </module>
 
 </module>
