@@ -87,7 +87,6 @@ public class XdocsExamplesAstConsistencyTest {
      * <p>Until: <a href="https://github.com/checkstyle/checkstyle/issues/18435">...</a>
      */
     private static final Set<String> SUPPRESSED_EXAMPLES = Set.of(
-            "checks/annotation/annotationonsameline/Example2",
             "checks/annotation/missingoverride/Example2",
             "checks/annotation/suppresswarningsholder/Example1",
             "checks/blocks/emptyblock/Example3",
@@ -98,11 +97,6 @@ public class XdocsExamplesAstConsistencyTest {
             "checks/coding/illegaltokentext/Example4",
             "checks/coding/illegalsymbol/Example4",
             "checks/coding/illegaltokentext/Example5",
-            "checks/coding/matchxpath/Example2",
-            "checks/coding/matchxpath/Example3",
-            "checks/coding/matchxpath/Example4",
-            "checks/coding/matchxpath/Example5",
-            "checks/coding/matchxpath/Example6",
             "checks/coding/packagedeclaration/Example2",
             "checks/coding/requirethis/Example5",
             "checks/coding/requirethis/Example6",
@@ -123,8 +117,6 @@ public class XdocsExamplesAstConsistencyTest {
             "checks/descendanttoken/Example7",
             "checks/descendanttoken/Example8",
             "checks/descendanttoken/Example9",
-            "checks/design/visibilitymodifier/Example11",
-            "checks/design/visibilitymodifier/Example12",
             "checks/finalparameters/Example4",
             "checks/imports/avoidstaticimport/Example2",
             "checks/imports/customimportorder/Example10",
@@ -293,8 +285,6 @@ public class XdocsExamplesAstConsistencyTest {
             "filters/suppresswithnearbytextfilter/Example7",
             "filters/suppresswithnearbytextfilter/Example8",
             "filters/suppresswithnearbytextfilter/Example9",
-            "filters/suppresswithplaintextcommentfilter/Example5",
-            "filters/suppresswithplaintextcommentfilter/Example9",
             "checks/indentation/indentation/Example2",
             "checks/indentation/indentation/Example3",
             "checks/indentation/indentation/Example4",
@@ -302,7 +292,18 @@ public class XdocsExamplesAstConsistencyTest {
             "checks/indentation/indentation/Example6",
             "checks/indentation/indentation/Example7",
             "checks/indentation/indentation/Example8",
-            "checks/indentation/indentation/Example9"
+            "checks/indentation/indentation/Example9",
+            // until https://github.com/checkstyle/checkstyle/issues/19891
+            "checks/coding/matchxpath/Example2",
+            "checks/coding/matchxpath/Example3",
+            "checks/coding/matchxpath/Example4",
+            "checks/coding/matchxpath/Example5",
+            "checks/coding/matchxpath/Example6",
+            "filters/suppresswithplaintextcommentfilter/Example9",
+            "checks/design/visibilitymodifier/Example7",
+            "checks/design/visibilitymodifier/Example9",
+            "checks/design/visibilitymodifier/Example10",
+            "checks/design/visibilitymodifier/Example11"
             );
 
     /**
